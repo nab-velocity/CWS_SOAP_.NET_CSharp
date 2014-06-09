@@ -1828,6 +1828,22 @@ namespace SampleCode
             BCtransaction.CustomerData = new TransactionCustomerData();
             BCtransaction.CustomerData.CustomerId = TxnData.OrderNumber;
 
+
+            BCtransaction.CustomerData.BillingData = new CustomerInfo();
+            BCtransaction.CustomerData.BillingData.Address = new AddressInfo();
+            BCtransaction.CustomerData.BillingData.Address.Street1 = "123 Fake Pl";
+            BCtransaction.CustomerData.BillingData.Address.City = "Beverly Hills";
+            BCtransaction.CustomerData.BillingData.Address.PostalCode = "90120";
+            BCtransaction.CustomerData.BillingData.Address.CountryCode = TypeISOCountryCodeA3.USA;
+
+            BCtransaction.CustomerData.ShippingData = new CustomerInfo();
+            BCtransaction.CustomerData.ShippingData.Address = new AddressInfo();
+            BCtransaction.CustomerData.ShippingData.Address.Street1 = "456 Face St";
+            BCtransaction.CustomerData.ShippingData.Address.City = "Westminster";
+            BCtransaction.CustomerData.ShippingData.Address.PostalCode = "80031";
+            BCtransaction.CustomerData.ShippingData.Address.CountryCode = TypeISOCountryCodeA3.USA;
+
+
             BCtransaction.TenderData = new BankcardTenderData();
             BCtransaction.TenderData.CardData = new CardData();
 

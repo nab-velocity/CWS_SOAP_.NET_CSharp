@@ -655,9 +655,9 @@ namespace SampleCode
             txtName.Text = "Test Merch";
             txtPhone.Text = "720 8881212"; // Must be of format “NNN NNNNNNN”
             txtTaxId.Text = "";
-            txtClientNum.Text = "1234";
+            txtClientNum.Text = "0123";
             txtSIC.Text = "5999";
-            txtStoreId.Text = "1234";
+            txtStoreId.Text = "0123";
             txtSocketNum.Text = "001";
             txtCustomerServiceInternet.Text = "test@test.com";
 
